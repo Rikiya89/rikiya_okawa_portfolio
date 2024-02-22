@@ -78,9 +78,14 @@ body {
         color: var(--secondary-color);
     }
     
-    .fz20 {
-        font-weight: bold;
-        font-size: 20px;
+    .fz24 {
+        font-weight: var(--bold-font);
+        font-size: 24px;
+    }
+
+    .fz18 {
+        font-weight: var(--bold-font);
+        font-size: 18px;
     }
 
     .l-container {
@@ -103,6 +108,7 @@ body {
             a {
                 color: var(--primary-color);
                 transition: var(--transition);
+                font-size: 15px;
                 &:hover {
                     @include PC {
                         color: var(--secondary-color);
