@@ -110,6 +110,8 @@ body {
 
             h1 {
                 color: var(--primary-color);
+                font-size: 24px;
+                font-weight: var(--bold-font);
             }
 
             a {
@@ -573,6 +575,9 @@ body {
             padding: 1.25rem;
             text-align: center;
             margin: 2rem 0 0;
+            &.mt {
+                margin-top: 294px;
+            }
         }
 
         .scroll-up {
@@ -609,6 +614,7 @@ body {
                 }
                 .tittle-box {
                     margin-top: 30px;
+                    text-align: center;
                     .title {
                         text-align: center;
                         font-weight: bold;
@@ -653,6 +659,17 @@ body {
                                     margin-bottom: 30px;
                                 }
                             }
+                            &.figma_block {
+                                @include SP {
+                                    width: 300px;
+                                    height: 333px;
+                                }
+                            }
+                        }
+                        img {
+                            @include PC {
+                                width: 575px;
+                            }
                         }
                     }
                 }
@@ -670,6 +687,9 @@ body {
                         }
                         &.mt30 {
                             margin-top: 30px;
+                        }
+                        &.mb {
+                            margin-bottom: 80px;
                         }
                     }
                     .detail-box {
@@ -697,6 +717,7 @@ body {
             }
         }
     }
+    
 
     .intersecting-circles-spinner,
     .intersecting-circles-spinner * {
