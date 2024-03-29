@@ -89,6 +89,7 @@ body {
     .fz18 {
         font-weight: var(--bold-font);
         font-size: 18px;
+        line-height: 1.5;
     }
 
     .l-container {
@@ -364,6 +365,7 @@ body {
                         .project-title {
                             margin-bottom: var(--bottom-margin);
                             font-size: 18px;
+                            line-height: 1.5;
                         }
                     }
 
@@ -574,12 +576,11 @@ body {
             background-color: var(--bg-color);
             padding: 1.25rem;
             text-align: center;
-            margin: 2rem 0 0;
+            margin: 19rem 0 0;
             &.mt {
                 margin-top: 294px;
             }
         }
-
         .scroll-up {
             position: fixed;
             right: 0.5%;
@@ -642,6 +643,16 @@ body {
                         @include SP {
                             flex-direction: column;
                         }
+                        .instagram-media {
+                            @include PC {
+                                width: 720px;
+                                height: 645px;
+                            }
+                            @include SP {
+                                width: 360px;
+                                height: 423px;
+                            }
+                        }
                         iframe {
                             @include PC {
                                 width: 720px;
@@ -693,6 +704,9 @@ body {
                         }
                         &.mb188 {
                             margin-bottom: 188px;
+                        }
+                        &.mb286 {
+                            margin-bottom: 286px;
                         }
                     }
                     .detail-box {

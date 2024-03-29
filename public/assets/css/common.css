@@ -247,6 +247,7 @@ body .fz24 {
 body .fz18 {
   font-weight: var(--bold-font);
   font-size: 18px;
+  line-height: 1.5;
 }
 body .l-container nav {
   position: sticky;
@@ -506,6 +507,7 @@ body .l-container .projects .project-inner .projects-container .project-containe
 body .l-container .projects .project-inner .projects-container .project-container .project-title {
   margin-bottom: var(--bottom-margin);
   font-size: 18px;
+  line-height: 1.5;
 }
 body .l-container .projects .project-inner .projects-container .project-card {
   background-color: #fff;
@@ -689,7 +691,7 @@ body .l-container footer {
   background-color: var(--bg-color);
   padding: 1.25rem;
   text-align: center;
-  margin: 2rem 0 0;
+  margin: 19rem 0 0;
 }
 body .l-container footer.mt {
   margin-top: 294px;
@@ -762,6 +764,18 @@ body .l-container .works-box .works-box-inner .product-box .product-inner {
   }
 }
 @media screen and (min-width: 768px) {
+  body .l-container .works-box .works-box-inner .product-box .product-inner .instagram-media {
+    width: 720px;
+    height: 645px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body .l-container .works-box .works-box-inner .product-box .product-inner .instagram-media {
+    width: 360px;
+    height: 423px;
+  }
+}
+@media screen and (min-width: 768px) {
   body .l-container .works-box .works-box-inner .product-box .product-inner iframe {
     width: 720px;
     height: 480px;
@@ -812,6 +826,9 @@ body .l-container .works-box .works-box-inner .description-box .txt-box.mb {
 }
 body .l-container .works-box .works-box-inner .description-box .txt-box.mb188 {
   margin-bottom: 188px;
+}
+body .l-container .works-box .works-box-inner .description-box .txt-box.mb286 {
+  margin-bottom: 286px;
 }
 body .l-container .works-box .works-box-inner .description-box .detail-box {
   margin-top: 30px;
