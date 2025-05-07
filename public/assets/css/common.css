@@ -233,6 +233,9 @@ body a {
   color: var(--primary-color);
   font-size: 1.2rem;
 }
+body h2, body h3, body p {
+  color: #0d0d0d;
+}
 body a:hover {
   text-decoration: none;
   color: var(--secondary-color);
@@ -380,6 +383,8 @@ body .l-container .hero .bio .bio_inner {
 }
 body .l-container .hero .bio .bio_inner .bio-title {
   margin-bottom: var(--bottom-margin);
+  font-weight: bold;
+  font-size: 24px;
 }
 body .l-container .hero .bio .bio_inner .bio-text {
   line-height: var(--line-height);
@@ -535,6 +540,9 @@ body .l-container .projects .project-inner .projects-container .project-card {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+body .l-container .projects .project-inner .projects-container .card-link {
+  color: #0d0d0d;
 }
 body .l-container .projects .project-inner .projects-container .project-link {
   -webkit-margin-before: auto;
