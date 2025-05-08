@@ -334,6 +334,16 @@ body .l-container nav .burger-menu {
 body .l-container .hero {
   display: flex;
   align-items: center;
+  position: relative;
+}
+body .l-container .hero .anchor-about {
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  body .l-container .hero .anchor-about {
+    -webkit-margin-before: -750px;
+    margin-block-start: -750px;
+  }
 }
 @media screen and (min-width: 768px) {
   body .l-container .hero {
@@ -426,10 +436,21 @@ body .l-container .more-about .more-about-inner .iconSection {
 }
 body .l-container .skills {
   max-width: 68.75rem;
-  margin: auto;
+  margin-inline: auto;
   text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  -webkit-margin-before: 2.5rem;
+  margin-block-start: 2.5rem;
+  -webkit-margin-after: 2.5rem;
+  margin-block-end: 2.5rem;
+  position: relative;
+}
+body .l-container .skills .anchor-skills {
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  body .l-container .skills .anchor-skills {
+    margin-top: -100px;
+  }
 }
 body .l-container .skills .skill-header {
   margin-bottom: 1rem;
@@ -477,6 +498,16 @@ body .l-container .projects {
   padding: 32px 0;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  position: relative;
+}
+body .l-container .projects .anchor-projects {
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  body .l-container .projects .anchor-projects {
+    -webkit-margin-before: -105px;
+    margin-block-start: -105px;
+  }
 }
 @media screen and (min-width: 768px) {
   body .l-container .projects .project-inner {
@@ -511,11 +542,6 @@ body .l-container .projects .project-inner .projects-container .project-containe
     width: 20.875rem;
   }
 }
-body .l-container .projects .project-inner .projects-container .project-container .project-pic {
-  width: 240px;
-  display: block;
-  margin: 0 auto;
-}
 body .l-container .projects .project-inner .projects-container .project-container .project-title {
   -webkit-margin-before: 5px;
   margin-block-start: 5px;
@@ -547,6 +573,8 @@ body .l-container .projects .project-inner .projects-container .card-link {
 body .l-container .projects .project-inner .projects-container .project-link {
   -webkit-margin-before: auto;
   margin-block-start: auto;
+  color: var(--primary-color);
+  font-size: 1.2rem;
 }
 body .l-container .projects .project-inner .projects-container .project-card-fadein {
   opacity: 0;
@@ -583,20 +611,13 @@ body .l-container .projects .some-projects-inner .projects-containers .project-c
     width: 20.875rem;
   }
 }
-body .l-container .projects .some-projects-inner .projects-containers .project-container p {
+body .l-container .projects .some-projects-inner .projects-containers .project-container .project-details {
+  margin-top: auto;
+  margin-bottom: var(--bottom-margin);
   padding: 0.4rem;
   font-size: 15px;
   text-align: left;
   line-height: 1.5;
-}
-body .l-container .projects .some-projects-inner .projects-containers .project-container .project-pic {
-  width: 240px;
-  display: block;
-  margin: 0 auto;
-}
-body .l-container .projects .some-projects-inner .projects-containers .project-container .project-details {
-  margin-top: auto;
-  margin-bottom: var(--bottom-margin);
 }
 body .l-container .projects .some-projects-inner .projects-containers .project-card {
   background-color: #fff;
@@ -620,35 +641,29 @@ body .l-container .projects .some-projects-inner .projects-containers .project-c
 body .l-container .swiper-block {
   padding-top: 30px;
   background: var(--bg-color);
+  position: relative;
+}
+body .l-container .swiper-block .anchor-digitalarts {
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  body .l-container .swiper-block .anchor-digitalarts {
+    -webkit-margin-before: -10px;
+    margin-block-start: -10px;
+  }
 }
 body .l-container .swiper-block .title {
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  body .l-container .swiper-block .swiper {
-    width: 540px;
-    height: 930px;
-  }
+body .l-container .swiper-block swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-@media screen and (max-width: 767px) {
-  body .l-container .swiper-block .swiper {
-    width: 369px;
-    height: 783px;
-  }
-}
-body .l-container .swiper-block .swiper .swiper-slide {
-  margin-top: 30px;
-}
-body .l-container .swiper-block .swiper .swiper-slide iframe {
-  width: 550px;
-  display: flex;
-  justify-content: center;
-}
-body .l-container .swiper-block .swiper-button-prev {
-  display: none;
-}
-body .l-container .swiper-block .swiper-button-next {
-  display: none;
+body .l-container .swiper-block swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 326px;
 }
 body .l-container .contact {
   margin-top: 2rem;

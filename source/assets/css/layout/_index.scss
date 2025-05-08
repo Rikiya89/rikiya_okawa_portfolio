@@ -181,6 +181,14 @@ body {
         .hero {
             display: flex;
             align-items: center;
+            position: relative;
+
+            .anchor-about {
+                position: absolute;
+                @include PC {
+                    margin-block-start: -750px;
+                }
+            }
 
             @include PC {
                 justify-content: center;
@@ -276,10 +284,18 @@ body {
 
         .skills {
             max-width: 68.75rem;
-            margin: auto;
+            margin-inline: auto;
             text-align: center;
-            margin-top: 2.5rem;
-            margin-bottom: 2.5rem;
+            margin-block-start: 2.5rem;
+            margin-block-end: 2.5rem;
+            position: relative;
+
+            .anchor-skills {
+                position: absolute;
+                @include PC {
+                    margin-top: -100px;
+                }
+            }
 
             .skill-header {
                 margin-bottom: 1rem;
@@ -332,6 +348,14 @@ body {
             padding: 32px 0;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            position: relative;
+
+            .anchor-projects {
+                position: absolute;
+                @include PC {
+                    margin-block-start: -105px;
+                }
+            }
 
             .project-inner {
                 @include PC {
@@ -362,12 +386,6 @@ body {
 
                         @include SP {
                             width: 20.875rem;
-                        }
-
-                        .project-pic {
-                            width: 240px;
-                            display: block;
-                            margin: 0 auto;
                         }
 
                         .project-title {
@@ -404,6 +422,8 @@ body {
 
                     .project-link {
                         margin-block-start: auto;
+                        color: var(--primary-color);
+                        font-size: 1.2rem;
                     }
 
                     .project-card-fadein {
@@ -443,22 +463,13 @@ body {
                             width: 20.875rem;
                         }
 
-                        p {
+                        .project-details {
+                            margin-top: auto ;
+                            margin-bottom: var(--bottom-margin);
                             padding: 0.4rem;
                             font-size: 15px;
                             text-align: left;
                             line-height: 1.5;
-                        }
-
-                        .project-pic {
-                            width: 240px;
-                            display: block;
-                            margin: 0 auto;
-                        }
-
-                        .project-details {
-                            margin-top: auto ;
-                            margin-bottom: var(--bottom-margin);
                         }
                     }
 
@@ -490,39 +501,29 @@ body {
         .swiper-block {
             padding-top: 30px;
             background: var(--bg-color);
+            position: relative;
+
+            .anchor-digitalarts {
+                position: absolute;
+                @include PC {
+                    margin-block-start: -10px;
+                }
+            }
 
             .title {
                 text-align: center;
             }
 
-            .swiper {
-                @include PC {
-                    width: 540px;
-                    height: 930px;
-                }
-
-                @include SP {
-                    width: 369px;
-                    height: 783px;
-                }
-
-                .swiper-slide {
-                    margin-top: 30px;
-
-                    iframe {
-                        width: 550px;
-                        display: flex;
-                        justify-content: center;
-                    }
-                }
+            swiper-container {
+                width: 100%;
+                padding-top: 50px;
+                padding-bottom: 50px;
             }
-
-            .swiper-button-prev {
-                display: none;
-            }
-
-            .swiper-button-next {
-                display: none;
+          
+            swiper-slide {
+                background-position: center;
+                background-size: cover;
+                width: 326px;
             }
         }
 
