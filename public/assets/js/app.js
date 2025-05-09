@@ -104,25 +104,4 @@
         });
     });
     
-    //swiper animation
-    const swiper = new Swiper(".swiper", {
-        loop: true, // ループ
-        speed: 1200, // 
-        mousewheel: true, // マウスホイールでスライド
-        direction: "vertical", // 縦方向
-        autoplay: { // 自動再生
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        //ページネーション
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-
 })();

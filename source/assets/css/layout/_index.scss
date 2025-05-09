@@ -19,7 +19,7 @@
     --secondary-shadow: #a17a69;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
-    --line-height: 1.8rem;
+    --line-height: 1.3rem;
     --transition: 0.3s;
     --bullet-background-color: red;
 }
@@ -58,10 +58,6 @@ body {
         padding-bottom: 15px;
     }
 
-    .mt {
-        margin-top: 6px;
-    }
-
     ul {
         list-style-type: none;
     }
@@ -74,6 +70,7 @@ body {
 
     h2, h3, p {
         color: #0d0d0d;
+        text-box-trim: trim-both;
     }
 
     a:hover {
@@ -97,7 +94,7 @@ body {
             position: sticky;
             top: 0;
             left: 0;
-            z-index: 1;
+            z-index: 2;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -110,15 +107,15 @@ body {
             }
 
             h1 {
-                color: var(--primary-color);
                 font-size: 24px;
+                color: var(--primary-color);
                 font-weight: var(--bold-font);
             }
 
             a {
+                font-size: 15px;
                 color: var(--primary-color);
                 transition: var(--transition);
-                font-size: 15px;
 
                 &:hover {
                     @include PC {
@@ -138,9 +135,9 @@ body {
                     position: fixed;
                     background-color: var(--bg-color);
                     flex-direction: column;
-                    top: 86px;
-                    left: 10%;
-                    width: 80%;
+                    top: 85px;
+                    left: 0%;
+                    width: 100%;
                     text-align: center;
                     transform: translateX(120%);
                     transition: transform 0.5s ease-in;
@@ -183,13 +180,6 @@ body {
             align-items: center;
             position: relative;
 
-            .anchor-about {
-                position: absolute;
-                @include PC {
-                    margin-block-start: -750px;
-                }
-            }
-
             @include PC {
                 justify-content: center;
                 gap: 2.5rem;
@@ -201,6 +191,13 @@ body {
                 margin-top: -4rem;
                 flex-direction: column;
                 gap: 0;
+            }
+
+            .anchor-about {
+                position: absolute;
+                @include PC {
+                    margin-block-start: -750px;
+                }
             }
 
             img {
@@ -233,14 +230,14 @@ body {
                     font-size: 15px;
 
                     .bio-title  {
-                        margin-bottom: var(--bottom-margin);
-                        font-weight: bold;
                         font-size: 24px;
+                        font-weight: bold;
+                        margin-bottom: var(--bottom-margin);
                     }
     
                     .bio-text {
-                        line-height: var(--line-height);
                         padding: 0.3rem 0;
+                        line-height: var(--line-height);
                     }
                 }
 
@@ -272,7 +269,7 @@ body {
 
                 .iconSection {
                     line-height: var(--line-height);
-                    padding: 0.3rem;
+                    padding: 0.5rem;
                     font-size: 15px;
 
                     @include SP {
@@ -286,19 +283,22 @@ body {
             max-width: 68.75rem;
             margin-inline: auto;
             text-align: center;
+            position: relative;
             margin-block-start: 2.5rem;
             margin-block-end: 2.5rem;
-            position: relative;
 
             .anchor-skills {
                 position: absolute;
                 @include PC {
                     margin-top: -100px;
                 }
+                @include SP {
+                    margin-top: -100px;
+                }
             }
 
             .skill-header {
-                margin-bottom: 1rem;
+                margin-block-end: 1rem;
             }
 
             .skills-wrapper {
@@ -344,15 +344,18 @@ body {
         }
 
         .projects {
-            background-color: var(--bg-color);
             padding: 32px 0;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
             position: relative;
+            margin-block-start: 2rem;
+            margin-block-end: 2rem;
+            background-color: var(--bg-color);
 
             .anchor-projects {
                 position: absolute;
                 @include PC {
+                    margin-block-start: -105px;
+                }
+                @include SP {
                     margin-block-start: -105px;
                 }
             }
@@ -363,7 +366,7 @@ body {
                     margin: 0 auto;
                 }
 
-                .recent-works {
+                .project-title {
                     text-align: center;
                     margin-bottom: 1rem;
                 }
@@ -371,6 +374,7 @@ body {
                 .projects-container {
                     display: flex;
                     justify-content: center;
+                    flex-wrap: wrap;
 
                     @include SP {
                         flex-direction: column;
@@ -388,8 +392,12 @@ body {
                             width: 20.875rem;
                         }
 
+                        .project-title, .project-details, .project-link {
+                            margin-block-start: auto;
+                        }
+
                         .project-title {
-                            margin-block-start: 5px;
+                            padding-block-start: 6px;
                             font-weight: bold;
                             font-size: 18px;
                             line-height: 1.2;
@@ -406,87 +414,19 @@ body {
 
                     .project-card {
                         background-color: #fff;
-                        border-radius: 11px;
-                        box-shadow: 0 3px 10px var(--primary-shadow);
                         padding: 20px;
                         margin: 10px;
                         display: flex;
-                        flex-direction: column;
                         align-items: center;
                         text-align: center;
-                    }
-
-                    .card-link {
-                        color: #0d0d0d;
+                        border-radius: 11px;
+                        flex-direction: column;
+                        box-shadow: 0 3px 10px var(--primary-shadow);
                     }
 
                     .project-link {
-                        margin-block-start: auto;
-                        color: var(--primary-color);
                         font-size: 1.2rem;
-                    }
-
-                    .project-card-fadein {
-                        opacity: 0;
-                        transform: translateY(50px);
-                        transition: opacity 1s ease-out, transform 1s ease-out;
-                    }
-                }
-            }
-
-            .some-projects-inner {
-                .projects-title {
-                    text-align: center;
-                    margin-bottom: 1rem;
-                }
-
-                .projects-containers {
-                    display: flex;
-                    gap: 10px;
-                    flex-wrap: wrap;
-                    justify-items: center;
-                    justify-content: center;
-
-                    @include PC {
-                        max-width: 1430px;
-                        margin-inline: auto;
-                    }
-
-                    .project-container {
-                        text-align: center;
-
-                        @include PC {
-                            width: 380px;
-                        }
-
-                        @include SP {
-                            width: 20.875rem;
-                        }
-
-                        .project-details {
-                            margin-top: auto ;
-                            margin-bottom: var(--bottom-margin);
-                            padding: 0.4rem;
-                            font-size: 15px;
-                            text-align: left;
-                            line-height: 1.5;
-                        }
-                    }
-
-                    .project-card {
-                        background-color: #fff;
-                        border-radius: 11px;
-                        box-shadow: 0 3px 10px var(--primary-shadow);
-                        padding: 20px;
-                        margin: 10px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        text-align: center;
-                    }
-
-                    .project-link {
-                        margin-top: auto;
+                        color: var(--primary-color);
                     }
 
                     .project-card-fadein {
@@ -506,7 +446,10 @@ body {
             .anchor-digitalarts {
                 position: absolute;
                 @include PC {
-                    margin-block-start: -10px;
+                    margin-block-start: -100px;
+                }
+                @include SP {
+                    margin-block-start: -100px;
                 }
             }
 
@@ -516,8 +459,8 @@ body {
 
             swiper-container {
                 width: 100%;
-                padding-top: 50px;
-                padding-bottom: 50px;
+                padding-block-start: 50px;
+                padding-block-end: 50px;
             }
           
             swiper-slide {
@@ -525,20 +468,64 @@ body {
                 background-size: cover;
                 width: 326px;
             }
+
+            .swiper-block :deep(.swiper-pagination-bullet) {
+                width: 10px;
+                height: 10px;
+                background-color: #999 !important;
+                opacity: 0.4 !important;
+                border-radius: 50% !important;
+                margin: 0 6px !important;
+            }
+
+            .swiper-block :deep(.swiper-pagination-bullet-active) {
+                background-color: #007AFF !important;
+                opacity: 1 !important;
+            }
+
+            // Add Swiper pagination part styling for visibility and layout
+            swiper-container::part(pagination) {
+                display: flex !important;
+                justify-content: center;
+                margin-top: 20px;
+                gap: 3px;
+                top: 435px;
+            }
+
+            /* Removed incorrect swiper-container::part(bullet):active selector */
         }
 
         .contact {
-            margin-top: 2rem;
+            margin-block-start: 2rem;
             background-color: #fff;
-            padding-top: 30px;
+            position: relative;
+            
+            @include PC {
+                padding-block-start: 100px;
+            }
+            
+            @include SP {
+                padding-block-start:0px;
+            }
+
+            .anchor-contact {
+                position: absolute;
+                @include PC {
+                    margin-block-start: -100px;
+                }
+
+                @include SP {
+                    margin-block-start: -100px;
+                }
+            }
 
             h2 {
                 text-align: center;
-                margin-bottom: var(--bottom-margin-2);
+                margin-block-end: var(--bottom-margin-2);
             }
 
             .contact-form-container {
-                margin: 0 auto;
+                margin-inline: auto;
                 padding: 0.938rem;
                 border-radius: 5px;
                 box-shadow: 0 3px 10px var(--secondary-shadow);
@@ -548,7 +535,7 @@ body {
                 }
 
                 @include SP {
-                    max-width: 23.75rem;
+                    max-width: 20rem;
                 }
 
                 label {
@@ -564,8 +551,8 @@ body {
 
                 .input-field {
                     width: 100%;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
+                    padding-block-start: 10px;
+                    padding-block-end: 10px;
                     border-radius: 5px;
                     border: none;
                     border: 2px outset var(--primary-color);
@@ -604,6 +591,7 @@ body {
             right: 1%;
             bottom: 50%;
             display: flex;
+            z-index: 3;
 
             .socicon {
                 width: 2rem;
@@ -611,15 +599,13 @@ body {
             }
         }
 
-        footer {
+        .footer {
             background-color: var(--bg-color);
             padding: 1.25rem;
             text-align: center;
-            margin: 19rem 0 0;
-            &.mt {
-                margin-top: 294px;
-            }
+            margin: 3rem 0 0;
         }
+
         .scroll-up {
             position: fixed;
             right: 0.5%;
@@ -638,6 +624,8 @@ body {
             opacity: 0;
             transition: opacity 0.6s ease-out;
         }
+
+
         //works style
         .works-box {
             p,a {
