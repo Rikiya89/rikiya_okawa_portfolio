@@ -4,12 +4,25 @@
         if (spinner) {
             // Apply fade-out animation
             spinner.classList.add('fade-out');
-    
+
             // Wait for the animation to finish before hiding the spinner
             spinner.addEventListener('animationend', () => {
                 spinner.style.display = 'none';
             });
         }
+
+        // Initialize Swiper after DOM and external scripts are fully loaded
+        let swiper = new Swiper(".mySwiper", {
+            effect: "flip",
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     };
     
     
@@ -103,5 +116,6 @@
             }
         });
     });
+
     
 })();
