@@ -35,15 +35,39 @@
             </div>
             
             <!-- Navbar -->
-            <nav>
-                <h1 class="fz24">Rikiya Okawa</h1>
-                <ul class="navigation">
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#digital_arts" class="nav-link">Digital Arts</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="english-page.html" class="nav-link">English</a></li>
+            <nav class="nav">
+                <h1 class="name">Rikiya Okawa</h1>
+                <ul class="navigation-list">
+                    <li class="list-item">
+                        <a href="#about" class="nav-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#skills" class="nav-link">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#projects" class="nav-link">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#digital_arts" class="nav-link">
+                            Digital Arts
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#contact" class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="english-page.html" class="nav-link">
+                            English
+                        </a>
+                    </li>
                 </ul>
                 <button class="burger-menu" id="burger-menu">
                     <ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -129,9 +153,9 @@
                     <h2 class="project-title fz24">
                         Some of my Recent Projects
                     </h2>
-                    <div class="projects-container">
-                        <div class="project-container project-card project-card-fadein">
-                            <a href="https://rikiya-okawa-369.vercel.app/jp" class="card-link" target="_blank">
+                    <ul class="card-list">
+                        <li class="card-item">
+                            <a href="https://rikiya-okawa-369.vercel.app/jp" class="card-block project-card-fadein" target="_blank">
                                 <img src="./assets/img/icons/new-portfolio.jpg" alt="project03.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     ポートフォリオサイト
@@ -139,14 +163,13 @@
                                 <p class="project-details">
                                     React、TypeScript、Three.js、Next.jsを学ぶために制作したポートフォリオサイトです。テクノロジーとデザインの融合を意識し、没入感のあるインターフェースを追求しました。モダンな技術とクリエイティブな表現力の向上を目指しています。
                                 </p>
-                                <p class="project-link">
+                                <p class="project-text">
                                     Check it Out
                                 </p>
                             </a>
-                        </div>
-                        <div class="project-container project-card project-card-fadein">
-                            <a href="works03.html" class="project-link">
-
+                        </li>
+                        <li class="card-item">
+                            <a href="works03.html" class="card-block project-card-fadein" target="_blank">
                                 <img src="./assets/img/icons/project03.jpg" alt="project03.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     グッゲンハイム x ggg Webデザイン
@@ -154,13 +177,13 @@
                                 <p class="project-details">
                                     UI/UXクラスでAdobe XDを使用し、架空の美術展覧会サイトを制作しました。ユーザーフレンドリーなデザインとインタラクティブな要素に重点を置き、約3時間で完成。ウェブデザインスキル向上に大きく貢献したプロジェクトです。
                                 </p>
-                                <p class="project-link">
+                                <p class="project-text">
                                     Check it Out
                                 </p>
                             </a>
-                        </div>
-                        <div class="project-container project-card project-card-fadein">
-                            <a href="works01.html" class="project-link">
+                        </li>
+                        <li class="card-item">
+                            <a href="works01.html" class="card-block project-card-fadein" target="_blank">
                                 <img src="./assets/img//icons/girardians.jpg" alt="GUARDIANS_logo" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     GUARDIANS OF THE MOON
@@ -168,12 +191,12 @@
                                 <p class="project-details">
                                     卒業制作で、実在するVR・AR施設のサービス改善に向け、UnityとTouchDesignerを使用してVRゲームとインタラクティブ映像を制作しました。ゲーム制作に約1ヶ月、映像制作に約1週間をかけ、C#やアセットストア素材を活用しました。
                                 </p>
-                                <p class="project-link">
+                                <p class="project-text">
                                     Check it Out
                                 </p>
                             </a>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
@@ -183,80 +206,92 @@
                     <h2 class="project-title fz24">
                         My Projects
                     </h2>
-                    <div class="projects-container">
-                        <div class="project-container project-card project-card-fadein">
-                            <img src="./assets/img/icons/kamakura.jpg" alt="kamakura.jpg" loading="lazy" class="project-pic" />
-                            <h3 class="project-title fz18">
-                                株式会社カヤック<br>UX企画発表
-                            </h3>
-                            <p class="project-details">
-                                学校のUX授業で、鎌倉の小学生向けに楽しみながらごみ問題を学べる授業を企画し、株式会社カヤック「つくっていいとも!」で発表しました。制作期間は4週間、イベントで1位を受賞することができました。
-                            </p>
-                            <a href="works02.html" class="project-link">
-                                Check it Out
+                    <ul class="card-list">
+                        <li class="card-item">
+                            <a href="works02.html" class="card-block project-card-fadein" target="_blank">
+                                <img src="./assets/img/icons/kamakura.jpg" alt="kamakura.jpg" loading="lazy" class="project-pic" />
+                                <h3 class="project-title fz18">
+                                    株式会社カヤック<br>UX企画発表
+                                </h3>
+                                <p class="project-details">
+                                    学校のUX授業で、鎌倉の小学生向けに楽しみながらごみ問題を学べる授業を企画し、株式会社カヤック「つくっていいとも!」で発表しました。制作期間は4週間、イベントで1位を受賞することができました。
+                                </p>
+                                <p class="project-text">
+                                    Check it Out
+                                </p>
                             </a>
-                        </div>
-                        <div class="project-container project-card project-card-fadein">
-                            <img src="./assets/img/icons/ui_ux_design.jpg" alt="ui_ux_design.jpg" loading="lazy" class="project-pic" />
-                            <h3 class="project-title">
-                                Yahoo乗換アプリ:<br>UI/UX変革プロジェクト
-                            </h3>
-                            <p class="project-details">
-                                学校のUXデザイン授業で、Yahoo!乗換案内アプリのUI/UX改善に取り組みました。ユーザーインタビューやペルソナ、カスタマージャーニー作成を担当し、最終案を統合。オンボーディングセクションの設計も行い、プロジェクト期間は1ヶ月でした。
-                            </p>
-                            <a href="works04.html" class="project-link">
-                                Check it Out
+                        </li>
+                        <li class="card-item">
+                            <a href="works04.html" class="card-block project-card-fadein" target="_blank">
+                                <img src="./assets/img/icons/ui_ux_design.jpg" alt="ui_ux_design.jpg" loading="lazy" class="project-pic" />
+                                <h3 class="project-title">
+                                    Yahoo乗換アプリ:<br>UI/UX変革プロジェクト
+                                </h3>
+                                <p class="project-details">
+                                    学校のUXデザイン授業で、Yahoo!乗換案内アプリのUI/UX改善に取り組みました。ユーザーインタビューやペルソナ、カスタマージャーニー作成を担当し、最終案を統合。オンボーディングセクションの設計も行い、プロジェクト期間は1ヶ月でした。
+                                </p>
+                                <p class="project-text">
+                                    Check it Out
+                                </p>
                             </a>
-                        </div>
-                        <div class="project-container project-card project-card-fadein">
-                            <img src="./assets/img/icons/the_one_ring.jpg" alt="the_one_ring.jpg" loading="lazy" class="project-pic" />
+                        </li>
+                        <li class="card-item">
+                            <a href="works05.html" class="card-block project-card-fadein" target="_blank">
+                                <img src="./assets/img/icons/the_one_ring.jpg" alt="the_one_ring.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     The One Ring Modeling
                                 </h3>
                                 <p class="project-details">
                                     Blenderを使用して『ロード・オブ・ザ・リング』の「一つの指輪」を初制作しました。中つ国の地図を背景に、指輪に細かな傷や汚れを加えリアリティを追求。約2時間で基本操作とレンダリング技術を習得し、今後さらに高品質な制作を目指します。
                                 </p>
-                                <a href="works05.html" class="project-link">
+                                <p class="project-text">
                                     Check it Out
-                                </a>
-                        </div>
-                        <div class="project-container project-card project-card-fadein">
-                            <img src="./assets/img/icons/virtual_cosmos.jpg" alt="virtual_cosmos.jpg" loading="lazy" class="project-pic" />
+                                </p>
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="works07.html" class="card-block project-card-fadein" target="_blank">
+                                <img src="./assets/img/icons/virtual_cosmos.jpg" alt="virtual_cosmos.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     Virtual Cosmos
                                 </h3>
                                 <p class="project-details">
                                     TouchDesignerを使用し、「宇宙×バーチャル×星雲」をテーマに制作しました。バーチャルコンサートでの使用を想定し、スマホ連動による球体の光や動き、カメラ操作を実現。約2時間でインタラクティブな表現を仕上げました。
                                 </p>
-                                <a href="works07.html" class="project-link">
+                                <p class="project-text">
                                     Check it Out
-                                </a>
-                        </div>
-                        <div class="project-container project-card project-card-fadein">
-                            <img src="./assets/img/icons/your_name.jpg" alt="your_name.jpg" loading="lazy" class="project-pic" />
-                            <h3 class="project-title">
-                                『君の名のは。』<br>OPアニメーション
-                            </h3>
-                            <p class="project-details">
-                                学生時代に学んだアニメーションの知識を活かし、映画『君の名は。』のオープニングシーンを手描きで再現しました。1週間かけて、繊細な感情表現や色使いを分析し、自分のスタイルで表現。創造力とアニメーション理解を深める経験となりました。
-                            </p>
-                            <a href="works06.html" class="project-link">
-                                Check it Out
+                                </p>
                             </a>
-                        </div>
-                        <div class="project-container project-card project-card-fadein">
-                            <img src="./assets/img/icons/animation.jpg" alt="animation.jpg" loading="lazy" class="project-pic" />
-                            <h3 class="project-title">
-                                Night Life
-                            </h3>
-                            <p class="project-details">
-                                カレッジ時代のデジタルアーツ卒業制作で、サブキャラクターデザインと映像編集を担当しました。先生が選んだ詩をテーマに1分間のアニメーションを制作。英語でのチーム制作に苦労しましたが、支えを受けて完成。制作期間は約1ヶ月です。
-                            </p>
-                            <a href="works08.html" class="project-link">
-                                Check it Out
+                        </li>
+                        <li class="card-item">
+                            <a href="works06.html" class="card-block project-card-fadein" target="_blank">
+                                <img src="./assets/img/icons/your_name.jpg" alt="your_name.jpg" loading="lazy" class="project-pic" />
+                                <h3 class="project-title">
+                                    『君の名のは。』<br>OPアニメーション
+                                </h3>
+                                <p class="project-details">
+                                    学生時代に学んだアニメーションの知識を活かし、映画『君の名は。』のオープニングシーンを手描きで再現しました。1週間かけて、繊細な感情表現や色使いを分析し、自分のスタイルで表現。創造力とアニメーション理解を深める経験となりました。
+                                </p>
+                                <p class="project-text">
+                                    Check it Out
+                                </p>
                             </a>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="card-item">
+                            <a href="works08.html" class="card-block project-card-fadein" target="_blank">
+                                <img src="./assets/img/icons/animation.jpg" alt="animation.jpg" loading="lazy" class="project-pic" />
+                                <h3 class="project-title">
+                                    Night Life
+                                </h3>
+                                <p class="project-details">
+                                    カレッジ時代のデジタルアーツ卒業制作で、サブキャラクターデザインと映像編集を担当しました。先生が選んだ詩をテーマに1分間のアニメーションを制作。英語でのチーム制作に苦労しましたが、支えを受けて完成。制作期間は約1ヶ月です。
+                                </p>
+                                <p class="project-text">
+                                    Check it Out
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
             
@@ -362,7 +397,7 @@
 
     <!-- Ion icons scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
 </html>

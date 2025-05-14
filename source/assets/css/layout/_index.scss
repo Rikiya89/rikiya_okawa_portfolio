@@ -90,7 +90,7 @@ body {
     }
 
     .l-container {
-        nav {
+        .nav {
             position: sticky;
             top: 0;
             left: 0;
@@ -106,13 +106,13 @@ body {
                 padding: 1.5rem 1rem;
             }
 
-            h1 {
+            .name {
                 font-size: 24px;
                 color: var(--primary-color);
                 font-weight: var(--bold-font);
             }
 
-            a {
+            .nav-link {
                 font-size: 15px;
                 color: var(--primary-color);
                 transition: var(--transition);
@@ -125,7 +125,7 @@ body {
                 }
             }
 
-            ul {
+            .navigation-list {
                 @include PC {
                     display: flex;
                     gap: 1.9rem;
@@ -143,7 +143,7 @@ body {
                     transition: transform 0.5s ease-in;
                 }
 
-                li {
+                .list-item {
                     font-weight: var(--bold-font);
 
                     @include SP {
@@ -371,25 +371,44 @@ body {
                     margin-bottom: 1rem;
                 }
 
-                .projects-container {
+                .card-list {
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
                     gap: 1.5rem;
                     justify-items: center;
 
-                    .project-container {
+                    .card-block {
                         padding: 1rem;
+                        background-color: #fff;
+                        padding: 20px;
+                        margin: 10px;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        border-radius: 11px;
+                        flex-direction: column;
+                        box-shadow: 0 3px 10px var(--primary-shadow);
+                        height: 100%;
                         
+                        @include PC {
+                            // Hover animation styles
+                            transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
+                        }
+
+                        &:hover {
+                            @include PC {
+                                transform: translateY(-10px) scale(1.03);
+                                box-shadow: 0 15px 30px rgba(71, 86, 223, 0.3), 0 0 15px rgba(71, 86, 223, 0.2);
+                                transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
+                            }
+                        }
+
                         @include PC {
                             width: 380px;
                         }
 
                         @include SP {
                             width: 20.875rem;
-                        }
-
-                        .project-title, .project-details, .project-link {
-                            margin-block-start: auto;
                         }
 
                         .project-title {
@@ -406,23 +425,13 @@ body {
                             text-align: left;
                             line-height: 1.3;
                         }
-                    }
 
-                    .project-card {
-                        background-color: #fff;
-                        padding: 20px;
-                        margin: 10px;
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        border-radius: 11px;
-                        flex-direction: column;
-                        box-shadow: 0 3px 10px var(--primary-shadow);
-                    }
+                        .project-text {
+                            font-size: 1.2rem;
+                            color: var(--primary-color);
+                            margin-block-start: auto;
+                        }
 
-                    .project-link {
-                        font-size: 1.2rem;
-                        color: var(--primary-color);
                     }
 
                     .project-card-fadein {
