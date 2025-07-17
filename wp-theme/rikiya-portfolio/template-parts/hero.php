@@ -1,47 +1,13 @@
 <?php
 /**
- * Hero Section Template Part
+ * Hero Section Template Part - Exact copy from original static site
  */
 ?>
 
 <!-- Hero Section -->
-<section class="hero" id="about">
-    <div class="intro">
-        <h1 class="title">
-            <span class="title-text">
-                Hi, I am
-            </span>
-            <span class="title-name">
-                <?php echo get_theme_mod('hero_name', 'Rikiya Okawa'); ?>
-            </span>
-        </h1>
-        
-        <p class="subtitle">
-            <?php echo get_theme_mod('hero_subtitle', 'I am a Web Engineer'); ?>
-        </p>
-        
-        <div class="cta-buttons">
-            <a href="#projects" class="cta-button cta-primary">
-                <?php echo get_theme_mod('cta_primary_text', 'View My Work'); ?>
-            </a>
-            <a href="#contact" class="cta-button cta-secondary">
-                <?php echo get_theme_mod('cta_secondary_text', 'Contact Me'); ?>
-            </a>
-        </div>
-    </div>
-    
-    <div class="hero-image">
-        <?php 
-        $hero_image = get_theme_mod('hero_image');
-        if ($hero_image) {
-            echo '<img src="' . esc_url($hero_image) . '" alt="Rikiya Okawa" class="profile-image" />';
-        }
-        ?>
-    </div>
-</section>
-
-<!-- Bio Section -->
-<section class="about">
+<section class="hero">
+    <div class="anchor-about" id="about"></div>
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/man-guy-person-desk-table-furniture-laptop-computer-sheld-speakers.svg" alt="rikiya_icon" loading="lazy" class="hero-img" />
     <div class="bio animate__animated animate__shakeX">
         <div class="bio_inner">
             <h2 class="bio-title fz24">
