@@ -3,6 +3,11 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icons8-upward-arrow.gif" class="socicon up-arrow"alt="scroll-up" />
         </i>
         
+        <!-- Footer section -->
+        <footer class="footer">
+            <p class="copy">&copy; Rikiya Okawa Copyright 2022</p>
+        </footer>
+        
     </div> <!-- end l-container -->
     
     <!-- Scripts -->

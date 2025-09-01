@@ -648,7 +648,7 @@ body .l-container .swiper-block .swiper .swiper-slide iframe {
 }
 @media screen and (min-width: 768px) {
   body .l-container .swiper-block .swiper .swiper-pagination {
-    top: 830px;
+    top: 870px;
   }
 }
 @media screen and (max-width: 767px) {
