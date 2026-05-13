@@ -8,7 +8,6 @@ const plumber = require("gulp-plumber");
 
 const browsersync = require('browser-sync').create();
 const connectSSI = require('gulp-connect-ssi');
-const connectPHP = require('gulp-connect-php');
 
 let SETTING = require('./gulpfile.setting.js');
 
@@ -44,27 +43,6 @@ gulp.task('browsersync', (done) => {
 });
 
 
-gulp.task('browsersync-connect-php', (done) => {
-	connectPHP.server({
-		port : SETTING.PHP_CONNECT.PORT,
-		base : SETTING.BROWSERSYNC.DOCUMENT_ROOT
-	}, () => {
-		browsersync.init({
-			proxy : 'localhost:' + SETTING.PHP_CONNECT.PORT,
-			middleware : [
-				connectSSI({
-					baseDir : SETTING.BROWSERSYNC.DOCUMENT_ROOT,
-					ext : '.html'
-				})
-			],
-			startPath : SETTING.BROWSERSYNC.STARTPATH,
-			ghostMode : SETTING.BROWSERSYNC.GHOSTMODE,
-			notify : SETTING.BROWSERSYNC.NOTIFY,
-		})
-	});
-	done();
-});
-
 gulp.task('browsersync-reload', (done) => {
 	browsersync.reload();
 	done();
@@ -85,16 +63,6 @@ gulp.task('default', (() => {
 	return gulp.series(
 		'sass',
 		'browsersync',
-		'watch'
-	)
-})());
-
-gulp.task('php', (() => {
-	SETTING.SASS.SOURCEMAPS = true;
-
-	return gulp.series(
-		'sass',
-		'browsersync-connect-php',
 		'watch'
 	)
 })());
