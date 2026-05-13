@@ -18,7 +18,4 @@ module.exports = {
 			scroll : false
 		},
 	},
-	PHP_CONNECT : {
-		PORT : 8003,
-	},
 };
