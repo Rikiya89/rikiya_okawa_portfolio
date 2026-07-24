@@ -2,7 +2,7 @@ module.exports = {
 	SASS : {
 		SOURCE_PATH : 'source/assets/css',
         SOURCE_FILE : '**/*.scss',
-        OUTPUT_PATH : 'public/assets/css',
+        OUTPUT_PATH : 'wp-theme/assets/css',
 		OPTION : {
 			outputStyle : 'expanded'
 		},

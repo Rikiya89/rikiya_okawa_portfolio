@@ -602,6 +602,74 @@ body {
                         cursor: pointer;
                     }
                 }
+
+                // Gravity Forms markup (Orbital theme) styled to match the original design
+                .gform_wrapper.gform-theme {
+                    // !important needed: GF defines these on an ID selector
+                    // (#gform_wrapper_N[data-form-index] .gform-theme), which
+                    // outranks this class selector regardless of nesting depth.
+                    --gf-color-primary: var(--primary-color) !important;
+                    --gf-color-in-ctrl-primary: var(--primary-color) !important;
+                    --gf-ctrl-border-color: var(--primary-color) !important;
+                    --gf-radius: 5px;
+
+                    .gfield_label {
+                        line-height: 2.7em;
+                        font-weight: var(--bold-font);
+                        color: var(--primary-color);
+                    }
+
+                    .ginput_container textarea {
+                        min-height: 6.25rem;
+                        font-size: 14px;
+                    }
+
+                    .ginput_container input,
+                    .ginput_container textarea {
+                        width: 100%;
+                        padding-block-start: 10px;
+                        padding-block-end: 10px;
+                        border-radius: 5px;
+                        border: 2px outset var(--primary-color);
+                        font-size: 0.875rem;
+                        outline: none;
+
+                        &::placeholder {
+                            padding: 0.5rem;
+                            color: var(--primary-color);
+                        }
+                    }
+
+                    .gform_footer {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .gform_button {
+                        width: 100%;
+                        padding: 10px;
+                        margin: 10px 0;
+                        background-color: #fff;
+                        color: var(--primary-color);
+                        border: 2px solid var(--primary-color);
+                        border-radius: 5px;
+                        font-size: 1rem;
+                        font-weight: var(--bold-font);
+                        transition: var(--transition);
+
+                        &:hover {
+                            background-color: var(--primary-color);
+                            color: #fff;
+                            border: 2px solid var(--primary-color);
+                            cursor: pointer;
+                        }
+                    }
+
+                    .validation_message {
+                        color: #d32f2f;
+                        font-size: 0.8rem;
+                    }
+                }
             }
         }
 

@@ -1,82 +1,9 @@
-<!DOCTYPE html>
-<html lang="en,ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Welcome, my World!" />
-        <meta name="keywords" content="大川力也,大川 力也,おおかわ りきや,オオカワ リキヤ,おおかわりきや,オオカワリキヤ,Rikiya Okawa, Ricky Okawa, Ricky O'kawa" />
-
-        <!--CSS Styles -->
-        <link rel="stylesheet" href="./assets/css/common.css">
-        <!-- Favicons -->
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/icons/favicon.png" />
-
-        <!-- Animate CSS CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>Rikiya Okawa | UI/UX Designer | Web Developer|</title>
-    </head>
-
-    <body>
-        <div class="l-container">
-
-            <!-- loading animation -->
-            <div class="intersecting-circles-spinner">
-                <div class="spinnerBlock">
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                </div>
-            </div>
-            <!-- Navbar -->
-            <nav class="nav">
-                <h1 class="name">Rikiya Okawa</h1>
-                <ul class="navigation-list">
-                    <li class="list-item">
-                        <a href="#about" class="nav-link">
-                            About
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#skills" class="nav-link">
-                            Skills
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#projects" class="nav-link">
-                            Projects
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#digital_arts" class="nav-link">
-                            Digital Arts
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#contact" class="nav-link">
-                            Contact
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="english-page.html" class="nav-link">
-                            English
-                        </a>
-                    </li>
-                </ul>
-                <button class="burger-menu" id="burger-menu">
-                    <ion-icon class="bars" name="menu-outline"></ion-icon>
-                </button>
-            </nav>
+<?php get_header(); ?>
 
             <!-- Hero Section -->
             <section class="hero">
                 <div class="anchor-about" id="about"></div>
-                <img src="./assets/img/icons/man-guy-person-desk-table-furniture-laptop-computer-sheld-speakers.svg" alt="rikiya_icon" loading="lazy" class="hero-img" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/man-guy-person-desk-table-furniture-laptop-computer-sheld-speakers.svg" alt="rikiya_icon" loading="lazy" class="hero-img" />
                 <div class="bio animate__animated animate__shakeX">
                     <div class="bio_inner">
                         <h2 class="bio-title fz24">
@@ -118,26 +45,26 @@
                 </h2>
                 <div class="skills-wrapper">
                     <div class="first-set animate__animated animate__pulse iconSection ">
-                        <img src="./assets/img/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/typescript.svg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/sass-1.svg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/react.svg" alt="react.svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/next.svg" alt="next.svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/p5js.jpg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/openframeworks.jpg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/cdnlogo.com_c.svg" alt="c#.svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/icons8-git.svg" alt="git.svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/Adobe_Photoshop_CC_icon.svg" alt="photoshop-icon-svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/Adobe_Illustrator_CC_icon.svg" alt="illustrstor-icon-svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/Adobe_XD_CC_icon.svg" alt="Adobe-XD-svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/Adobe_After_Effects_CC_icon.svg" alt="aftereffects-icon-svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/Adobe_Premiere_Pro_CC_icon.svg" alt="premiere-icon-svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/figma.svg" alt="Figma-svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/unity.svg" alt="unity.svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/touchdesigner.svg" alt="touchdesginer.png" loading="lazy"class="icon icon-card" />
-                        <img src="./assets/img/icons/Blender_logo.svg" alt="Blender_logo" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/typescript.svg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/sass-1.svg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/react.svg" alt="react.svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/next.svg" alt="next.svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/p5js.jpg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/openframeworks.jpg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/cdnlogo.com_c.svg" alt="c#.svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icons8-git.svg" alt="git.svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/Adobe_Photoshop_CC_icon.svg" alt="photoshop-icon-svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/Adobe_Illustrator_CC_icon.svg" alt="illustrstor-icon-svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/Adobe_XD_CC_icon.svg" alt="Adobe-XD-svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/Adobe_After_Effects_CC_icon.svg" alt="aftereffects-icon-svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/Adobe_Premiere_Pro_CC_icon.svg" alt="premiere-icon-svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/figma.svg" alt="Figma-svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/unity.svg" alt="unity.svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/touchdesigner.svg" alt="touchdesginer.png" loading="lazy"class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/Blender_logo.svg" alt="Blender_logo" loading="lazy" class="icon icon-card" />
                     </div>
                 </div>
             </section>
@@ -152,7 +79,7 @@
                     <ul class="card-list">
                         <li class="card-item">
                             <a href="https://rikiya-okawa-369.vercel.app/jp" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/new-portfolio.jpg" alt="project03.jpg" loading="lazy" class="project-pic" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/new-portfolio.jpg" alt="project03.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     ポートフォリオサイト
                                 </h3>
@@ -166,7 +93,7 @@
                         </li>
                         <li class="card-item">
                             <a href="works03.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/project03.jpg" alt="project03.jpg" loading="lazy" class="project-pic" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/project03.jpg" alt="project03.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     グッゲンハイム x ggg Webデザイン
                                 </h3>
@@ -180,7 +107,7 @@
                         </li>
                         <li class="card-item">
                             <a href="works01.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img//icons/girardians.jpg" alt="GUARDIANS_logo" loading="lazy" class="project-pic" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img//icons/girardians.jpg" alt="GUARDIANS_logo" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     GUARDIANS OF THE MOON
                                 </h3>
@@ -205,7 +132,7 @@
                     <ul class="card-list">
                         <li class="card-item">
                             <a href="works02.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/kamakura.jpg" alt="kamakura.jpg" loading="lazy" class="project-pic" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/kamakura.jpg" alt="kamakura.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title fz18">
                                     株式会社カヤック<br>UX企画発表
                                 </h3>
@@ -219,7 +146,7 @@
                         </li>
                         <li class="card-item">
                             <a href="works04.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/ui_ux_design.jpg" alt="ui_ux_design.jpg" loading="lazy" class="project-pic" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/ui_ux_design.jpg" alt="ui_ux_design.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     Yahoo乗換アプリ:<br>UI/UX変革プロジェクト
                                 </h3>
@@ -233,7 +160,7 @@
                         </li>
                         <li class="card-item">
                             <a href="works05.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/the_one_ring.jpg" alt="the_one_ring.jpg" loading="lazy" class="project-pic" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/the_one_ring.jpg" alt="the_one_ring.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     The One Ring Modeling
                                 </h3>
@@ -247,7 +174,7 @@
                         </li>
                         <li class="card-item">
                             <a href="works07.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/virtual_cosmos.jpg" alt="virtual_cosmos.jpg" loading="lazy" class="project-pic" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/virtual_cosmos.jpg" alt="virtual_cosmos.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     Virtual Cosmos
                                 </h3>
@@ -261,7 +188,7 @@
                         </li>
                         <li class="card-item">
                             <a href="works06.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/your_name.jpg" alt="your_name.jpg" loading="lazy" class="project-pic" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/your_name.jpg" alt="your_name.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     『君の名のは。』<br>OPアニメーション
                                 </h3>
@@ -275,7 +202,7 @@
                         </li>
                         <li class="card-item">
                             <a href="works08.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/animation.jpg" alt="animation.jpg" loading="lazy" class="project-pic" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/animation.jpg" alt="animation.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     Night Life
                                 </h3>
@@ -339,61 +266,9 @@
                 </h2>
                 <div class="contact-form-container">
                     <div class="contact-form">
-                        <form action="https://formspree.io/f/mdojeryk" method="POST">
-                            <div class="form-control">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
-                            </div>
-                            <div class="form-control">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
-                            </div>
-                            <div class="form-control">
-                                <label for="message">Message</label>
-                                <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
-                            </div>
-                            <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
-                        </form>
+                        <?php gravity_form( 1, false, false, false, null, true ); ?>
                     </div>
                 </div>
             </section>
 
-            <!-- Social accounts - Fixed to the right -->
-            <div class="socials">
-                <a href="https://x.com/recodinghewold" target="twitter">
-                    <img src="./assets/img/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy" class="socicon" />
-                </a>
-                <a href="https://www.instagram.com/ricky_o_369/" target="instagram">
-                    <img src="./assets/img/icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon" />
-                </a>
-                <a href="https://www.linkedin.com/in/rikiya-okawa369/" target="linkedin">
-                    <img src="./assets/img/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" />
-                </a>
-                <a href="https://github.com/Rikiya89" target="github">
-                    <img src="./assets/img/icons/icons8-github.gif" alt="Github" class="socicon" />
-                </a>
-            </div>
-
-            <!-- Scroll to top -->
-            <i class="scroll-up" id="scroll-up">
-                <img src="./assets/img/icons/icons8-upward-arrow.gif" class="socicon up-arrow"alt="scroll-up" />
-            </i>
-
-            <!-- Footer section -->
-            <footer class="footer">
-                <p class="copy">&copy; Rikiya Okawa Copyright 2022</p>
-            </footer>
-        </div>
-
-    </body>
-
-    <!-- Website scripts -->
-    <script src="./assets/js/app.js" defer></script>
-    <script async src="https://www.instagram.com/embed.js" defer></script>
-
-    <!-- Ion icons scripts -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-
-</html>
+<?php get_footer(); ?>

@@ -1,89 +1,19 @@
-<!DOCTYPE html>
-<html lang="en,ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Welcome, my World!" />
-        <meta name="keywords" content="大川力也,大川 力也,おおかわ りきや,オオカワ リキヤ,おおかわりきや,オオカワリキヤ,Rikiya Okawa, Ricky Okawa, Ricky O'kawa" />
-
-        <!--CSS Styles -->
-        <link rel="stylesheet" href="./assets/css/common.css">
-        <!-- Favicons -->
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/icons/favicon.png" />
-
-        <!-- Animate CSS CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>Rikiya Okawa | UI/UX Designer | Web Developer|</title>
-    </head>
-
-    <body>
-        <div class="l-container">
-
-            <!-- loading animation -->
-            <div class="intersecting-circles-spinner">
-                <div class="spinnerBlock">
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                </div>
-            </div>
-            <!-- Navbar -->
-            <nav class="nav">
-                <h1 class="name">Rikiya Okawa</h1>
-                <ul class="navigation-list">
-                    <li class="list-item">
-                        <a href="#about" class="nav-link">
-                            About
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#skills" class="nav-link">
-                            Skills
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#projects" class="nav-link">
-                            Projects
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#digital_arts" class="nav-link">
-                            Digital Arts
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#contact" class="nav-link">
-                            Contact
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="english-page.html" class="nav-link">
-                            English
-                        </a>
-                    </li>
-                </ul>
-                <button class="burger-menu" id="burger-menu">
-                    <ion-icon class="bars" name="menu-outline"></ion-icon>
-                </button>
-            </nav>
+<?php
+/* Template Name: English */
+get_header();
+?>
 
             <!-- Hero Section -->
             <section class="hero">
                 <div class="anchor-about" id="about"></div>
-                <img src="./assets/img/icons/man-guy-person-desk-table-furniture-laptop-computer-sheld-speakers.svg" alt="rikiya_icon" loading="lazy" class="hero-img" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/man-guy-person-desk-table-furniture-laptop-computer-sheld-speakers.svg" alt="rikiya_icon" loading="lazy" class="hero-img" />
                 <div class="bio animate__animated animate__shakeX">
                     <div class="bio_inner">
                         <h2 class="bio-title fz24">
                             About Me
                         </h2>
                         <p class="bio-text">
-                            東京を拠点に活動するフロントエンドエンジニア／<br>クリエイティブコーダーの大川力也です。<br>Webサイト制作と、p5.jsやGLSL、TouchDesignerを用いた生成的・実験的なビジュアル表現を軸に活動しています。
+                            Hi, I'm Rikiya Okawa, a front-end developer and creative coder based in Tokyo. I build for the web and craft generative, experimental visuals with tools like p5.js, GLSL, and TouchDesigner.
                         </p>
                     </div>
                 </div>
@@ -92,20 +22,21 @@
             <!-- More about -->
             <section class="more-about">
                 <div class="more-about-inner">
-                    <h2 class="fz24">
-                        More About Me
-                    </h2>
+                    <h2 class="fz24">More About Me</h2>
                     <p class="iconSection">
-                        現在はHTML、CSS/SCSS、JavaScriptを中心に、React、Next.js、TypeScriptを用いたフロントエンド開発に携わっています。設計から実装まで一貫して手掛け、使いやすく美しいインターフェースづくりを大切にしています。
+                        I currently work on front-end development with HTML, CSS/SCSS, and JavaScript, building interfaces with React, Next.js, and TypeScript. I enjoy owning a project from design through implementation, with a focus on interfaces that feel both usable and refined.
                     </p>
                     <p class="iconSection">
-                        一方で、p5.js、GLSL、TouchDesigner、Unity、openFrameworksといったツールを用いて、ジェネラティブでインタラクティブなビジュアル表現の制作にも取り組んでいます。コードを使って動きや偶然性のある表現を生み出す過程に、大きな魅力を感じています。
+                        Alongside development, I create generative and interactive visuals using p5.js, GLSL, TouchDesigner, Unity, and openFrameworks. I'm drawn to the process of using code to produce motion and emergent, unpredictable forms.
                     </p>
                     <p class="iconSection">
-                        数理的なパターンやサクレッドジオメトリ、リアルタイムグラフィックスに強い関心があり、XRや空間コンピューティングをはじめとするイマーシブテクノロジーの可能性を日々探求しています。
+                        I have a strong interest in mathematical art, sacred geometry, and real-time graphics, and I continue to explore immersive technologies such as XR and spatial computing.
                     </p>
                     <p class="iconSection">
-                        長期的には、Web開発とリアルタイムグラフィックス、イマーシブな体験表現をつなぐクリエイティブテクノロジストとして活動していくことを目指しています。
+                        My long-term goal is to work as a creative technologist, connecting web development with real-time graphics and immersive experiences.
+                    </p>
+                    <p class="iconSection">
+                        I'm a native Japanese speaker with business-level English and conversational French, and I'm currently learning Indonesian.
                     </p>
                 </div>
             </section>
@@ -117,27 +48,27 @@
                     My Top Skills
                 </h2>
                 <div class="skills-wrapper">
-                    <div class="first-set animate__animated animate__pulse iconSection ">
-                        <img src="./assets/img/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/typescript.svg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/sass-1.svg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/react.svg" alt="react.svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/next.svg" alt="next.svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/p5js.jpg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/openframeworks.jpg" alt="" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/cdnlogo.com_c.svg" alt="c#.svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/icons8-git.svg" alt="git.svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/Adobe_Photoshop_CC_icon.svg" alt="photoshop-icon-svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/Adobe_Illustrator_CC_icon.svg" alt="illustrstor-icon-svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/Adobe_XD_CC_icon.svg" alt="Adobe-XD-svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/Adobe_After_Effects_CC_icon.svg" alt="aftereffects-icon-svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/Adobe_Premiere_Pro_CC_icon.svg" alt="premiere-icon-svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/figma.svg" alt="Figma-svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/unity.svg" alt="unity.svg" loading="lazy" class="icon icon-card" />
-                        <img src="./assets/img/icons/touchdesigner.svg" alt="touchdesginer.png" loading="lazy"class="icon icon-card" />
-                        <img src="./assets/img/icons/Blender_logo.svg" alt="Blender_logo" loading="lazy" class="icon icon-card" />
+                    <div class="first-set animate__animated animate__pulse iconSection">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/typescript.svg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/sass-1.svg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/react.svg" alt="react.svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/next.svg" alt="next.svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/p5js.jpg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/openframeworks.jpg" alt="" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/cdnlogo.com_c.svg" alt="c#.svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icons8-git.svg" alt="git.svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/Adobe_Photoshop_CC_icon.svg" alt="photoshop-icon-svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/Adobe_Illustrator_CC_icon.svg" alt="illustrstor-icon-svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/Adobe_XD_CC_icon.svg" alt="Adobe-XD-svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/Adobe_After_Effects_CC_icon.svg" alt="aftereffects-icon-svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/Adobe_Premiere_Pro_CC_icon.svg" alt="premiere-icon-svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/figma.svg" alt="Figma-svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/unity.svg" alt="unity.svg" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/touchdesigner.svg" alt="touchdesginer.png" loading="lazy" class="icon icon-card" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/Blender_logo.svg" alt="Blender_logo" loading="lazy" class="icon icon-card" />
                     </div>
                 </div>
             </section>
@@ -151,13 +82,13 @@
                     </h2>
                     <ul class="card-list">
                         <li class="card-item">
-                            <a href="https://rikiya-okawa-369.vercel.app/jp" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/new-portfolio.jpg" alt="project03.jpg" loading="lazy" class="project-pic" />
+                            <a href="https://rikiya-okawa-369.vercel.app/en" class="card-block project-card-fadein" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/new-portfolio.jpg" alt="project03.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
-                                    ポートフォリオサイト
+                                    Portfolio Site
                                 </h3>
                                 <p class="project-details">
-                                    React、TypeScript、Three.js、Next.jsを学ぶために制作したポートフォリオサイトです。テクノロジーとデザインの融合を意識し、没入感のあるインターフェースを追求しました。モダンな技術とクリエイティブな表現力の向上を目指しています。
+                                    This is a portfolio site I created to learn React, TypeScript, Three.js, and Next.js. I focused on the fusion of technology and design, aiming to create an immersive interface. My goal is to enhance both modern technical skills and creative expression.
                                 </p>
                                 <p class="project-text">
                                     Check it Out
@@ -166,12 +97,12 @@
                         </li>
                         <li class="card-item">
                             <a href="works03.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/project03.jpg" alt="project03.jpg" loading="lazy" class="project-pic" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/project03.jpg" alt="project03.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
-                                    グッゲンハイム x ggg Webデザイン
+                                    Guggenheim × ggg Web Design
                                 </h3>
                                 <p class="project-details">
-                                    UI/UXクラスでAdobe XDを使用し、架空の美術展覧会サイトを制作しました。ユーザーフレンドリーなデザインとインタラクティブな要素に重点を置き、約3時間で完成。ウェブデザインスキル向上に大きく貢献したプロジェクトです。
+                                    In a UI/UX class, I created a mock art exhibition website using Adobe XD. I focused on user-friendly design and interactive elements, completing the project in about three hours. This project significantly contributed to improving my web design skills.
                                 </p>
                                 <p class="project-text">
                                     Check it Out
@@ -180,12 +111,12 @@
                         </li>
                         <li class="card-item">
                             <a href="works01.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img//icons/girardians.jpg" alt="GUARDIANS_logo" loading="lazy" class="project-pic" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/girardians.jpg" alt="GUARDIANS_logo" loading="lazy" class="project-pic" />
                                 <h3 class="project-title">
                                     GUARDIANS OF THE MOON
                                 </h3>
                                 <p class="project-details">
-                                    卒業制作で、実在するVR・AR施設のサービス改善に向け、UnityとTouchDesignerを使用してVRゲームとインタラクティブ映像を制作しました。ゲーム制作に約1ヶ月、映像制作に約1週間をかけ、C#やアセットストア素材を活用しました。
+                                    For my graduation project, I created a VR game and interactive visuals using Unity and TouchDesigner to help improve the services of a real-world VR/AR facility. I spent about one month developing the game and about one week producing the visuals, utilizing C# and Asset Store resources.
                                 </p>
                                 <p class="project-text">
                                     Check it Out
@@ -205,12 +136,12 @@
                     <ul class="card-list">
                         <li class="card-item">
                             <a href="works02.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/kamakura.jpg" alt="kamakura.jpg" loading="lazy" class="project-pic" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/kamakura.jpg" alt="kamakura.jpg" loading="lazy" class="project-pic" />
                                 <h3 class="project-title fz18">
-                                    株式会社カヤック<br>UX企画発表
+                                    Kayac Inc. UX Planning Presentation
                                 </h3>
                                 <p class="project-details">
-                                    学校のUX授業で、鎌倉の小学生向けに楽しみながらごみ問題を学べる授業を企画し、株式会社カヤック「つくっていいとも!」で発表しました。制作期間は4週間、イベントで1位を受賞することができました。
+                                    In a school UX class, I planned a lesson designed to help elementary school students in Kamakura learn about waste issues in an enjoyable way. I presented the project at Kayac Inc.'s "Tsukutte Iitomo!" event. The project was completed over four weeks and won first place at the event.
                                 </p>
                                 <p class="project-text">
                                     Check it Out
@@ -219,12 +150,12 @@
                         </li>
                         <li class="card-item">
                             <a href="works04.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/ui_ux_design.jpg" alt="ui_ux_design.jpg" loading="lazy" class="project-pic" />
-                                <h3 class="project-title">
-                                    Yahoo乗換アプリ:<br>UI/UX変革プロジェクト
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/ui_ux_design.jpg" alt="ui_ux_design.jpg" loading="lazy" class="project-pic" />
+                                <h3 class="project-title fz18">
+                                    UI/UX Redesign Project for the Yahoo Transit App
                                 </h3>
                                 <p class="project-details">
-                                    学校のUXデザイン授業で、Yahoo!乗換案内アプリのUI/UX改善に取り組みました。ユーザーインタビューやペルソナ、カスタマージャーニー作成を担当し、最終案を統合。オンボーディングセクションの設計も行い、プロジェクト期間は1ヶ月でした。
+                                    In a school UX design class, I worked on improving the UI/UX of the Yahoo! Transit Navigation App. I was responsible for user interviews, creating personas, and mapping customer journeys, as well as integrating the final proposal. I also designed the onboarding section. The project was completed over the course of one month.
                                 </p>
                                 <p class="project-text">
                                     Check it Out
@@ -233,12 +164,12 @@
                         </li>
                         <li class="card-item">
                             <a href="works05.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/the_one_ring.jpg" alt="the_one_ring.jpg" loading="lazy" class="project-pic" />
-                                <h3 class="project-title">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/the_one_ring.jpg" alt="the_one_ring.jpg" loading="lazy" class="project-pic" />
+                                <h3 class="project-title fz18">
                                     The One Ring Modeling
                                 </h3>
                                 <p class="project-details">
-                                    Blenderを使用して『ロード・オブ・ザ・リング』の「一つの指輪」を初制作しました。中つ国の地図を背景に、指輪に細かな傷や汚れを加えリアリティを追求。約2時間で基本操作とレンダリング技術を習得し、今後さらに高品質な制作を目指します。
+                                    Using Blender, I created my first model: the "One Ring" from The Lord of the Rings. I added fine scratches and dirt to the ring to enhance realism, placing it against a backdrop of of the Middle-earth map. Within about two hours, I learned the basic operations and rendering techniques, and I aim to pursue even higher quality in future projects.
                                 </p>
                                 <p class="project-text">
                                     Check it Out
@@ -247,12 +178,12 @@
                         </li>
                         <li class="card-item">
                             <a href="works07.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/virtual_cosmos.jpg" alt="virtual_cosmos.jpg" loading="lazy" class="project-pic" />
-                                <h3 class="project-title">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/virtual_cosmos.jpg" alt="virtual_cosmos.jpg" loading="lazy" class="project-pic" />
+                                <h3 class="project-title fz18">
                                     Virtual Cosmos
                                 </h3>
                                 <p class="project-details">
-                                    TouchDesignerを使用し、「宇宙×バーチャル×星雲」をテーマに制作しました。バーチャルコンサートでの使用を想定し、スマホ連動による球体の光や動き、カメラ操作を実現。約2時間でインタラクティブな表現を仕上げました。
+                                    I created a project themed around "Space × Virtual × Nebula" using TouchDesigner. Designed with virtual concerts in mind, it features interactive elements such as smartphone-controlled sphere lighting, movement, and camera operation. I completed the interactive expressions in about two hours.
                                 </p>
                                 <p class="project-text">
                                     Check it Out
@@ -261,12 +192,12 @@
                         </li>
                         <li class="card-item">
                             <a href="works06.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/your_name.jpg" alt="your_name.jpg" loading="lazy" class="project-pic" />
-                                <h3 class="project-title">
-                                    『君の名のは。』<br>OPアニメーション
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/your_name.jpg" alt="your_name.jpg" loading="lazy" class="project-pic" />
+                                <h3 class="project-title fz18">
+                                    Your Name. Opening Animation
                                 </h3>
                                 <p class="project-details">
-                                    学生時代に学んだアニメーションの知識を活かし、映画『君の名は。』のオープニングシーンを手描きで再現しました。1週間かけて、繊細な感情表現や色使いを分析し、自分のスタイルで表現。創造力とアニメーション理解を深める経験となりました。
+                                    Using the animation techniques I learned during my student years, I hand-drew a recreation of the opening scene from the film Your Name. Over the course of a week, I analyzed the delicate emotional expressions and use of color, and reinterpreted them in my own style. This project was a valuable experience that deepened my creativity and understanding of animation.
                                 </p>
                                 <p class="project-text">
                                     Check it Out
@@ -275,12 +206,10 @@
                         </li>
                         <li class="card-item">
                             <a href="works08.html" class="card-block project-card-fadein" target="_blank">
-                                <img src="./assets/img/icons/animation.jpg" alt="animation.jpg" loading="lazy" class="project-pic" />
-                                <h3 class="project-title">
-                                    Night Life
-                                </h3>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/animation.jpg" alt="animation.jpg" loading="lazy" class="project-pic" />
+                                <h3 class="project-title fz18">Night Life</h3>
                                 <p class="project-details">
-                                    カレッジ時代のデジタルアーツ卒業制作で、サブキャラクターデザインと映像編集を担当しました。先生が選んだ詩をテーマに1分間のアニメーションを制作。英語でのチーム制作に苦労しましたが、支えを受けて完成。制作期間は約1ヶ月です。
+                                    For my college digital arts graduation project, I was responsible for sub-character design and video editing. We created a one-minute animation based on a poem selected by our professor. Although working as a team in English was challenging, with support, we successfully completed the project. The production period was about one month.
                                 </p>
                                 <p class="project-text">
                                     Check it Out
@@ -297,7 +226,7 @@
                 <h2 class="title fz24">
                     Digital Arts
                 </h2>
-              <!-- Swiper -->
+                <!-- Swiper -->
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -339,61 +268,9 @@
                 </h2>
                 <div class="contact-form-container">
                     <div class="contact-form">
-                        <form action="https://formspree.io/f/mdojeryk" method="POST">
-                            <div class="form-control">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
-                            </div>
-                            <div class="form-control">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
-                            </div>
-                            <div class="form-control">
-                                <label for="message">Message</label>
-                                <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
-                            </div>
-                            <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
-                        </form>
+                        <?php gravity_form( 1, false, false, false, null, true ); ?>
                     </div>
                 </div>
             </section>
 
-            <!-- Social accounts - Fixed to the right -->
-            <div class="socials">
-                <a href="https://x.com/recodinghewold" target="twitter">
-                    <img src="./assets/img/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy" class="socicon" />
-                </a>
-                <a href="https://www.instagram.com/ricky_o_369/" target="instagram">
-                    <img src="./assets/img/icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon" />
-                </a>
-                <a href="https://www.linkedin.com/in/rikiya-okawa369/" target="linkedin">
-                    <img src="./assets/img/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" />
-                </a>
-                <a href="https://github.com/Rikiya89" target="github">
-                    <img src="./assets/img/icons/icons8-github.gif" alt="Github" class="socicon" />
-                </a>
-            </div>
-
-            <!-- Scroll to top -->
-            <i class="scroll-up" id="scroll-up">
-                <img src="./assets/img/icons/icons8-upward-arrow.gif" class="socicon up-arrow"alt="scroll-up" />
-            </i>
-
-            <!-- Footer section -->
-            <footer class="footer">
-                <p class="copy">&copy; Rikiya Okawa Copyright 2022</p>
-            </footer>
-        </div>
-
-    </body>
-
-    <!-- Website scripts -->
-    <script src="./assets/js/app.js" defer></script>
-    <script async src="https://www.instagram.com/embed.js" defer></script>
-
-    <!-- Ion icons scripts -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-
-</html>
+<?php get_footer(); ?>

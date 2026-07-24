@@ -1,3 +1,7 @@
 node_modules
 .claude/
 .tokensave/
+
+# WordPress (Docker-managed core/DB, not tracked — only wp-theme/ is)
+wp-theme/uploads/
+wp-theme/*.zip
