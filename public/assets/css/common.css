@@ -119,21 +119,6 @@ input::-ms-reveal {
  * @param {number} [$maxwidth:0] - 拡大を停止するウィンドウ幅
  * @param {number} [$minwidth:0] - 縮小を停止するウィンドウ幅
  */
-/**
- * 三角形
- * @param {string} $direction - 三角の向き 上:T / 下:B / 左:L / 右:R
- * @param {number} $w - 幅
- * @param {number} $h - 高さ
- * @param {string} $color - 色
- */
-/**
- * ローディングアニメーション
- * @param {number} $size - 円のサイズ
- * @param {number} $thickness - 円の枠線の太さ
- * @param {string} $backcolor - 円の色
- * @param {string} $forecolor - 円の強調色
- * @param {string} [$duration=1] - アニメーションのスピード（単位は秒:s）
- */
 body {
   min-width: 320px;
   color: #000;
@@ -158,22 +143,6 @@ picture {
   display: block;
 }
 
-@media screen and (max-width: 767px) {
-  .pc {
-    display: none !important;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .sp {
-    display: none !important;
-  }
-}
-
-:root {
-  --variable-name: value;
-}
-
 /* Variables */
 :root {
   --font-family: "Roboto", "Noto Sans JP", sans-serf;
@@ -189,7 +158,6 @@ picture {
   --bottom-margin-2: 1rem;
   --line-height: 1.3rem;
   --transition: 0.3s;
-  --bullet-background-color: red;
 }
 
 html {
@@ -212,15 +180,6 @@ body {
   width: 100%;
   background-color: #fff;
   font-family: var(--font-family);
-}
-body .pc {
-  display: block;
-}
-body .sp {
-  display: none;
-}
-body .pb {
-  padding-bottom: 15px;
 }
 body ul {
   list-style-type: none;
@@ -792,9 +751,7 @@ body .l-container .up-arrow {
   width: 3rem;
   height: 3rem;
 }
-body .l-container .first-set,
-body .l-container .second-set,
-body .l-container .third-set {
+body .l-container .first-set {
   opacity: 0;
   transition: opacity 0.6s ease-out;
 }

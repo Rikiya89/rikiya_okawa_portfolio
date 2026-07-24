@@ -2,10 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
-:root {
-    --variable-name: value;
-}
-
 /* Variables */
 :root {
     --font-family: "Roboto", "Noto Sans JP", sans-serf;
@@ -21,7 +17,6 @@
     --bottom-margin-2: 1rem;
     --line-height: 1.3rem;
     --transition: 0.3s;
-    --bullet-background-color: red;
 }
 
 html {
@@ -46,17 +41,6 @@ body {
     background-color: #fff;
     font-family: var(--font-family);
 
-    .pc {
-        display: block;
-    }
-
-    .sp {
-        display: none;
-    }
-
-    .pb {
-        padding-bottom: 15px;
-    }
 
     ul {
         list-style-type: none;
@@ -655,9 +639,7 @@ body {
             height: 3rem;
         }
 
-        .first-set,
-        .second-set,
-        .third-set {
+        .first-set {
             opacity: 0;
             transition: opacity 0.6s ease-out;
         }
