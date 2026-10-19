@@ -21,6 +21,7 @@
   "overrides": {
     "gulp-sass-glob-use-forward": {
       "glob": "^7.2.3"
-    }
+    },
+    "ws": "8.21.0"
   }
 }
